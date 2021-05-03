@@ -10,7 +10,7 @@ const PortfolioDetails = () => {
                 projects.map((project, index) =>
                     <div id={"portfolioItem" + (index + 1)} class="modal" role="dialog" key={project.liveSite}>
                         <div class="modal-dialog">
-                            <div class="modal-content">
+                            <div class="modal-content animate__animated  ">
                                 <div class="modal-header">
                                     <button class="custom-tooltip close bg-danger" data-dismiss="modal">
                                         <span class="glyphicon glyphicon-remove"></span>
@@ -22,8 +22,8 @@ const PortfolioDetails = () => {
                                     <h4 class="modal-title">{project.name}</h4>
                                     <p>Implements By: {project.implementsBy}</p>
                                     {
-                                        project.description.map(point =>
-                                            <p>{point}</p>
+                                        project.description.map((point, index) =>
+                                            <p key={index}>{point}</p>
                                         )
                                     }
                                 </div>

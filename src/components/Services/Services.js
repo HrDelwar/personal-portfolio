@@ -3,12 +3,13 @@ import lines from '../../dist/img/lines.png'
 import forntEnd from '../../dist/img/front-end.png';
 import backEnd from '../../dist/img/back-end.png';
 import consultancy from '../../dist/img/consultancy.png';
+import TrackVisibility from 'react-on-screen';
 
 const services = [
     {
         name: 'Front-end',
         img: forntEnd,
-        description: "As a MERN Stack Developer, I have experience in HTML5, CSS3, Bootstrap, MaterialUI and techniques working with jQuery or more popular javascript frameworks such as React.js, Vue.js"
+        description: "As well as providing Responsive Web Design with popular javascript frameworks such as React.js, HTML5, CSS3, Bootstrap4&5, MaterialUI and techniques working with jQuery and familiar with Vue.js."
     },
     {
         name: 'Back-end',
@@ -28,8 +29,12 @@ const Services = () => {
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3><span id="serviceText"></span> </h3>
-                        <img src={lines} class="img-lines" alt="lines" />
+                        <TrackVisibility once>
+                            {({ isVisible }) => isVisible && <>
+                                <h2 class="animate__animated animate__fadeInRightBig">services</h2>
+                                <img class="animate__animated animate__fadeInLeftBig img-lines" src={lines} alt="lines" />
+                            </>}
+                        </TrackVisibility>
                     </div>
                     {
                         services.map(service =>

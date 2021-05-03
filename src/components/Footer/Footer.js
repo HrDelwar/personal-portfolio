@@ -2,6 +2,7 @@ import { faFacebookF, faInstagram, faLinkedin, faTwitter } from '@fortawesome/fr
 import { faAngleDoubleUp, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
+import TrackVisibility from 'react-on-screen';
 import { Link } from 'react-router-dom';
 import lines from '../../dist/img/lines.png';
 
@@ -18,8 +19,14 @@ const Footer = () => {
     return (
         <footer >
             <div class="container text-center">
-                <h3><span id="footerText"></span></h3>
-                <img src={lines} class="img-lines" alt="lines" />
+                <TrackVisibility once>
+                    {({ isVisible }) => isVisible && <>
+                        <h2 class="animate__animated animate__fadeInDown text-uppercase">get in touch</h2>
+                        <img class="animate__animated animate__fadeInLeft img-lines" src={lines} alt="lines" />
+                        <p><a href="mailto:hrdelwar75@gmail.com" class="color-brand">hrdelwar75@gmail.com</a></p>
+                        <p><a href="tel:+8801749269594" class="color-brand" >+8801749269594</a></p>
+                    </>}
+                </TrackVisibility>
                 <div class="row ">
                     <div class="list-group ">
                         <ul class="icon-list list-unstyled text-capitalize">

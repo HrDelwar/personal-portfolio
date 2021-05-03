@@ -2,6 +2,7 @@ import { faEye } from '@fortawesome/free-regular-svg-icons';
 import { faCode, faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import TrackVisibility from 'react-on-screen';
 import lines from '../../dist/img/lines.png';
 import project1 from '../../dist/img/Portfolio-1.jpg';
 import project2 from '../../dist/img/Portfolio-2.jpg';
@@ -85,8 +86,12 @@ const Portfolio = () => {
         <section id="portfolio" class="site-section section-portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h3><span id="recentWorkText"></span></h3>
-                    <img src={lines} class="img-lines" alt="lines" />
+                    <TrackVisibility once>
+                        {({ isVisible }) => isVisible && <>
+                            <h2 class="animate__animated animate__fadeInDown">my recent project</h2>
+                            <img class="animate__animated animate__fadeInLeft img-lines" src={lines} alt="lines" />
+                        </>}
+                    </TrackVisibility>
                 </div>
                 <div class="row">
                     {

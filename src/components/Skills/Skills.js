@@ -1,26 +1,36 @@
 import React from 'react';
+import TrackVisibility from 'react-on-screen';
 import lines from '../../dist/img/lines.png'
 const Skills = () => {
     return (
         <section class="site-section section-skills">
             <div class="container">
                 <div class="text-center">
-    
-                    <h3><span id="skillsText"></span></h3>
-                    <img src={lines} class="img-lines" alt="lines" />
+                    <TrackVisibility once> 
+                        {({ isVisible }) => isVisible && <>
+                            <h2 class="animate__animated animate__fadeInRightBig">skills</h2>
+                            <img class="animate__animated animate__fadeInLeftBig img-lines" src={lines} alt="lines" />
+                        </>}
+                    </TrackVisibility>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="skill">
-                            <h4>Html/css</h4>
+                            <h4>Html</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="100">100%</div>
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="94">94%</div>
                             </div>
                         </div>
                         <div class="skill">
-                            <h4>Python</h4>
+                            <h4>CSS</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="75">75%</div>
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="92">92%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h4>Bootstrap-4&5</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="90">90%</div>
                             </div>
                         </div>
                     </div>
@@ -28,30 +38,43 @@ const Skills = () => {
                         <div class="skill">
                             <h4>Javascript</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="82">82%</div>
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="82">85%</div>
                             </div>
                         </div>
                         <div class="skill">
-                            <h4>Ruby</h4>
+                            <h4>React</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="66">66%</div>
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="74">78%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h4>php</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="52">52%</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="skill">
-                            <h4>Php</h4>
+                            <h4>Express.js</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="97">97%</div>
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="60">60%</div>
                             </div>
                         </div>
                         <div class="skill">
-                            <h4>Java</h4>
+                            <h4>Node.js</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="45">45%</div>
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="52">52%</div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h4>MongoDB</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="65">65%</div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>

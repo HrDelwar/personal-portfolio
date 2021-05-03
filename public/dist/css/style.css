@@ -449,6 +449,7 @@
       -moz-transition: background-color 0.25s ease-in-out;
       -webkit-transition: background-color 0.25s ease-in-out;
       -o-transition: background-color 0.25s ease-in-out;
+      background: #00000026;
   }
   
   .portfolio-item:hover:before{

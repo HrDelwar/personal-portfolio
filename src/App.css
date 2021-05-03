@@ -46,6 +46,18 @@ footer {
 .tada:hover {
     animation: tada 1s;
 }
+.text-danger{color:#ff0707 !important}
+
+.form-error{
+	box-shadow: none;
+	border-bottom-color: #ff0707 !important;
+	border-left: 4px solid #ff0707 !important;
+}
+.form-error:focus{
+	box-shadow: none;
+	border-bottom-color: #ff0707 !important;
+	border-left: 4px solid #ff0707 !important;
+}
 
 .btn-scroll-up {
     width: 40px;
