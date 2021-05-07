@@ -37,7 +37,7 @@ const Hero = () => {
                         <TrackVisibility>
                             {
                                 ({ isVisible }) => isVisible &&
-                                    <img src={hero} class="animate__animated animate__fadeInRight" alt="alex-vidal" />
+                                    <img src={hero} class="animate__animated animate__fadeInRight" alt="Hr Delwar" />
                             }
                         </TrackVisibility>
                     </div>

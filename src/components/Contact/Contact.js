@@ -73,9 +73,9 @@ const Contact = () => {
                             {errors.name && <p class="text-danger">Message is required</p>}
                         </div>
                     </div>
-                    <button class="btn btn-border custom-tooltip" type="submit" >Send Message
+                    <button class="btn btn-border " type="submit" >Send Message
                         <span class="glyphicon glyphicon-send"></span>
-                        <span class="custom-tooltip-item">I'm ready to do your project</span>
+                        
                     </button>
                 </form>
                 {success && <p class="color-brand" style={{ fontSize: 25, marginTop: 10 }}>Message send successfully!</p>}

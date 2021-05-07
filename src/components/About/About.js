@@ -13,7 +13,7 @@ const About = () => {
                                 <img class="animate__animated animate__fadeInLeft img-lines" src={lines} alt="lines" />
                             </>}
                         </TrackVisibility>
-                        <p class="text-justify">Hello! I am Habibur Rahman Delwar, a MERN stack developer, Jr. Web Developer or a JavaScript enthusiast. And I have good knowledge building web applications with React.js for client-side, Node.js / express.js for server-side, and MongoDB for database. I am currently available for a job. If your company needs a React developer, junior web developer, or MERN stack developer,then get in touch.</p>
+                        <p class="text-justify">Hello! I am Habibur Rahman Delwar, a React Developer, MERN stack developer, Jr. Web Developer or a JavaScript enthusiast. And I have good knowledge building web applications with React.js for client-side, Node.js / express.js for server-side, and MongoDB for database. I am currently available for a job. If your company needs a React developer, junior web developer, or MERN stack developer,then get in touch.</p>
                         <TrackVisibility>
                         {
                             ({isVisible}) => isVisible && <a href="https://docs.google.com/document/d/18H9uIXujPX1tCdOrnF1brICsHU_C7Oqk/export?format=pdf" class="animate__animated animate__fadeInRight btn btn-fill" download>Download my cv </a>

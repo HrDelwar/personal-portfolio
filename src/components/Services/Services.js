@@ -1,25 +1,25 @@
 import React from 'react';
 import lines from '../../dist/img/lines.png'
 import forntEnd from '../../dist/img/front-end.png';
-import backEnd from '../../dist/img/back-end.png';
-import consultancy from '../../dist/img/consultancy.png';
+import template from '../../dist/img/back-end.png';
+import backend from '../../dist/img/consultancy.png';
 import TrackVisibility from 'react-on-screen';
 
 const services = [
     {
         name: 'Front-end',
         img: forntEnd,
-        description: "As well as providing Responsive Web Design with popular javascript frameworks such as React.js, HTML5, CSS3, Bootstrap4&5, MaterialUI and techniques working with jQuery and familiar with Vue.js."
+        description: "As well as making responsive front-end development with popular javascript frameworks such as React.js, familiar with Vue.js, HTML5, CSS3, Bootstrap4&5, MaterialUI and techniques working with jQuery."
     },
     {
         name: 'Back-end',
-        img: backEnd,
+        img: backend,
         description: "Utilising node.js, express.js, mongoDB, firebase, heroku, including REST APIs, and more. Building e-services, e-commerce, e-learning and more website and web applications."
     },
     {
-        name: 'Consultancy',
-        img: consultancy,
-        description: "As well as providing development services, I can also help you decide strategic roadmaps via consultancy services."
+        name: 'Template',
+        img: template,
+        description: "As well as making responsive web template with HTML5, CSS3, Bootstrap4&5, Tailwind-CSS and jQuery."
     },
 ];
 
@@ -31,7 +31,7 @@ const Services = () => {
                     <div class="col-md-12">
                         <TrackVisibility once>
                             {({ isVisible }) => isVisible && <>
-                                <h2 class="animate__animated animate__fadeInRightBig">services</h2>
+                                <h2 class="animate__animated animate__fadeInRightBig">what can i do</h2>
                                 <img class="animate__animated animate__fadeInLeftBig img-lines" src={lines} alt="lines" />
                             </>}
                         </TrackVisibility>
