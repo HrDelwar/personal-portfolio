@@ -4,17 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import TrackVisibility from 'react-on-screen';
 import lines from '../../dist/img/lines.png';
-import project1 from '../../dist/img/Portfolio-1.jpg';
-import project2 from '../../dist/img/Portfolio-2.jpg';
-import project3 from '../../dist/img/Portfolio-3.jpg';
-import project4 from '../../dist/img/Portfolio-4.jpg';
-import project5 from '../../dist/img/Portfolio-5.jpg';
-import project6 from '../../dist/img/Portfolio-6.jpg';
 
 export const projects = [
     {
         name: 'Painting Art - Online Art Service',
-        img: project1,
+        img: "https://i.ibb.co/k6jXbh7/Portfolio-1.png",
         liveSite: "https://hr-painting-art.netlify.app/",
         implementsBy: "React, React-router, React-hook-form, Visa card payment, Node.js, Express.js, Firebase, Bootstrap, MaterialUI, MongoDB",
         codeLinkClient: "https://github.com/HrDelwar/painting-art-client",
@@ -24,8 +18,18 @@ export const projects = [
             "● Admin can manage admin, manage service, manage book, set user rule."]
     },
     {
+        name: 'Retro Blog - Blog Site',
+        img: "https://i.ibb.co/q90hBmy/Portfolio-8.png",
+        liveSite: "https://hr-retro-blog.netlify.app/",
+        implementsBy: "React,  React-router, React-animated-slider, Node.js, Express.js, TTailwind CSS, MongoDB, heroku",
+        codeLinkClient: "https://github.com/HrDelwar/retro-blog-client",
+        codeLinkServer: "https://github.com/hrdelwar/retro-blog-server",
+        description: ["● register email and password.",
+        "● login email and password", "● admin can add a blok post", "● admin can delete a block post","● admin can see all users","● user can reed all blogs","● user can contact admin",]
+    },
+    {
         name: 'Ema Jhon - Ecommerce shop',
-        img: project2,
+        img: "https://i.ibb.co/XjMZvyp/Portfolio-2.png",
         liveSite: "https://hrdelwar-ema-john-simple.netlify.app/",
         implementsBy: "React, React-router, React-hook-form, Visa card payment, Node.js, Express.js",
         codeLinkClient: "https://github.com/HrDelwar/ema-john-simple",
@@ -36,7 +40,7 @@ export const projects = [
     },
     {
         name: 'Dream Destination - Journey booking',
-        img: project3,
+        img: "https://i.ibb.co/fXmGtw0/Portfolio-3.png",
         liveSite: "https://hr-dream-destination.netlify.app/",
         implementsBy: "React, React-router, React-hook-form, react-google-map, Node.js, Express.js, Firebase, MaterialUI, MongoDB",
         codeLinkClient: "https://github.com/HrDelwar/dream-destination",
@@ -48,7 +52,7 @@ export const projects = [
     },
     {
         name: 'Burj Al Arab - Hotel Booking ',
-        img: project4,
+        img: "https://i.ibb.co/9rVBcTG/Portfolio-4.png",
         liveSite: "https://hr-hotel-burj-al-arab.netlify.app/",
         implementsBy: "React, React-router, React-hook-form, Node.js, Express.js, Firebase, MaterialUI, MongoDB",
         codeLinkClient: "https://github.com/HrDelwar/hotel-burj-al-arab",
@@ -61,7 +65,7 @@ export const projects = [
     },
     {
         name: 'Volunteer Network - Event',
-        img: project5,
+        img: "https://i.ibb.co/6ySRFnP/Portfolio-5.png",
         liveSite: "https://hr-volunteer-network.netlify.app/",
         implementsBy: "React, React-router, React-hook-form, Node.js, Express.js, MaterialUI, MongoDB",
         codeLinkClient: "https://github.com/HrDelwar/volunteer-network-client",
@@ -72,7 +76,7 @@ export const projects = [
     },
     {
         name: 'Global Library - Online Book library',
-        img: project6,
+        img: "https://i.ibb.co/3Y7Ngqh/Portfolio-6.png",
         liveSite: "https://hr-global-library.netlify.app/",
         implementsBy: "React, React-router, React-hook-form, Node.js, Express.js, Firebase, MaterialUI, MongoDB",
         codeLinkClient: "https://github.com/HrDelwar/global-library-client",
@@ -80,6 +84,16 @@ export const projects = [
         description: ["● Implements firebase google, GitHub, and Gmail-password authentication.",
             "● Implements CURD operation with MongoDB database and express.js.",]
     },
+    {
+        name: 'Hr-bliss-shop - Ecommerce shop',
+        img: "https://i.ibb.co/7QyZYK5/Portfolio-7.png",
+        liveSite: "https://hr-bliss-shop.netlify.app/",
+        implementsBy: "React, Redux, React-router, React-animated-slider, Node.js, Express.js, React Bootstrap, MongoDB",
+        codeLinkClient: "https://github.com/HrDelwar/bliss-shop",
+        codeLinkServer: "",
+        description: []
+    },
+   
 ]
 const Portfolio = () => {
     return (

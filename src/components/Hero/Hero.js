@@ -1,5 +1,4 @@
 import React from 'react';
-import hero from '../../dist/img/hr.delwarpng.png';
 import Typed from 'react-typed';
 import TrackVisibility from 'react-on-screen';
 
@@ -37,7 +36,7 @@ const Hero = () => {
                         <TrackVisibility>
                             {
                                 ({ isVisible }) => isVisible &&
-                                    <img src={hero} class="animate__animated animate__fadeInRight" alt="Hr Delwar" />
+                                    <img src="https://i.ibb.co/THZZ8T1/hr-delwarpng.png" class="animate__animated animate__fadeInRight" alt="Hr Delwar" />
                             }
                         </TrackVisibility>
                     </div>
