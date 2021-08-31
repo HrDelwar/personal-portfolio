@@ -28,13 +28,13 @@ const PortfolioDetails = () => {
                                     }
                                 </div>
                                 <div class="modal-footer">
-                                    <a href={project.liveSite} class="custom-tooltip mr-1" target="_blank" rel="noreferrer">
+                                    <a href={project.liveSite} class="custom-tooltip mr-1" target="_blank" rel="noopener noreferrer">
                                         Live Site
                                     </a>
-                                    <a href={project.codeLinkClient} target="_blank" rel="noreferrer" class="custom-tooltip mr-1">
+                                    <a href={project.codeLinkClient} target="_blank" rel="noopener noreferrer" class="custom-tooltip mr-1">
                                         Client Code
                                     </a>
-                                    {project.codeLinkServer && <a href={project.codeLinkServer} target="_blank" rel="noreferrer" class="custom-tooltip mr-1">
+                                    {project.codeLinkServer && <a href={project.codeLinkServer} target="_blank" rel="noopener noreferrer" class="custom-tooltip mr-1">
                                         Server Code
                                     </a>}
                                 </div>

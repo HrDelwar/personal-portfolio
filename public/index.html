@@ -1,74 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-  <!-- Basic Page Needs
+  <head>
+    <!-- Basic Page Needs
     ================================================== -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <title>Hr Delwar | Web Developer</title>
+    <title>Hr Delwar | Web Developer</title>
 
-  <meta name="description" content="This is personal portfolio website about Hr Delwar a MERN Stack developer">
-  <meta name="author" content="HrDelwar">
-  <meta name="keywords" content="website, protfolio, web designe, web development, design, development, React, React Native, React Developer, MERN Stack Developer">
+    <meta
+      name="description"
+      content="This is personal portfolio website about Hr Delwar a MERN Stack developer"
+    />
+    <meta name="author" content="HrDelwar" />
+    <meta
+      name="keywords"
+      content="website, protfolio, web designe, web development, design, development, React, React Native, React Developer, MERN Stack Developer"
+    />
 
-  <meta property='og:title' content='Hr Delwar | React Developer' />
-  <meta property="og:type" content="Portfolio Website" />
-  <meta property='og:image' content='https://i.ibb.co/0rpqNRG/share-link.png' />
-  <meta property='og:description'
-    content='This is personal portfolio website about Hr Delwar a MERN Stack developer.' />
-  <meta property='og:url' content='https://hrdelwar.netlify.app' />
+    <meta property="og:title" content="Hr Delwar | React Developer" />
+    <meta property="og:type" content="Portfolio Website" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/0rpqNRG/share-link.png"
+    />
+    <meta
+      property="og:description"
+      content="This is personal portfolio website about Hr Delwar a MERN Stack developer."
+    />
+    <meta property="og:url" content="https://hrdelwar.netlify.app" />
 
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="400">
-  <meta property="og:image:height" content="400">
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
     ================================================== -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
 
-  <!-- Favicon
+    <!-- Favicon
     ================================================== -->
-  <link rel="apple-touch-icon" sizes="180x180" href="dist/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="dist/img/favicon.png">
-  <script src="https://kit.fontawesome.com/7e6304a535.js" crossorigin="anonymous"></script>
-  <!-- Stylesheets
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="dist/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="dist/img/favicon.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/7e6304a535.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Stylesheets
     ================================================== -->
-  <!-- Bootstrap core CSS -->
-  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="dist/css/style.css" rel="stylesheet">
-  <link href="dist/css/responsive.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="dist/css/style.css" rel="stylesheet" />
+    <link href="dist/css/responsive.css" rel="stylesheet" />
 
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+  </head>
 
-</head>
-
-<body id="root">
-
-  <!-- Bootstrap core JavaScript
+  <body id="root">
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Placed at the end of the document so the pages load faster -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="dist/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-  <script src="dist/js/skrollr.min.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
-  <script src="dist/js/jquery.countTo.min.js"></script>
-  <script src="dist/js/script.js"></script>
+    <script>
+      window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function () {};
 
-</body>
+      const message = () => {
+        const target = document.querySelector("#root");
+        target.setAttribute("style", "position:relative;");
+        const parent = document.createElement("div");
+        parent.setAttribute(
+          "style",
+          "position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:black;border-radius:5px;color:white; z-index:9999;box-shadow: 1px 2px 8px 2px rgba(255,255,255,.5)"
+        );
+        parent.innerHTML = `
+        
+    <h5 style="text-align:center">JUST COOL DUDE, FOCUS YOUR JOB</h5>
+    <image  src="https://miro.medium.com/max/1400/0*C-cPP9D2MIyeexAT.gif" alt="just-fun" />
+    `;
+        target.appendChild(parent);
+        setTimeout(() => {
+          target.removeChild(parent);
+        }, 3400);
+      };
 
+      document.onkeydown = (e) => {
+        if (e.keyCode === 123) {
+          message();
+          return false;
+        }
+
+        if (e.ctrlKey && e.shiftKey && e.key == "U") {
+          message();
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.key == "K") {
+          message();
+          return false;
+        }
+
+        if (e.ctrlKey && e.key == "u") {
+          message();
+          return false;
+        }
+
+        if (e.ctrlKey && e.shiftKey && e.key == "E") {
+          message();
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.key == "I") {
+          message();
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.key == "J") {
+          message();
+          return false;
+        }
+
+        if (e.ctrlKey && e.shiftKey && e.key == "C") {
+          message();
+          return false;
+        }
+      };
+
+      document.addEventListener(
+        "contextmenu",
+        (ev) => {
+          ev.preventDefault();
+          message();
+          return false;
+        },
+        false
+      );
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="dist/js/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+    <script src="dist/js/jquery.countTo.min.js"></script>
+    <script src="dist/js/script.js"></script>
+  </body>
 </html>

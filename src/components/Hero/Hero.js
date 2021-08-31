@@ -23,7 +23,7 @@ const Hero = () => {
                                             loop
                                         />
                                     </p>
-                                    <a href="https://drive.google.com/file/d/1LkBzrqWz6c9x4NNTXzgn6p7OwONWzpoK/view" target="_blank" rel="noreferrer" class="custom-tooltip btn btn-fill mr-1 " >Get Resume
+                                    <a href="https://drive.google.com/file/d/1LkBzrqWz6c9x4NNTXzgn6p7OwONWzpoK/view" target="_blank" rel="noopener noreferrer" class="custom-tooltip btn btn-fill mr-1 " >Get Resume
                                      </a>
                                     <div class="clearfix visible-xxs"></div>
                                     <a href="#portfolio" class="custom-tooltip btn btn-border" >Explore more

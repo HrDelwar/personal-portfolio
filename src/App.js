@@ -1,14 +1,11 @@
-import './App.css';
-import Home from './components/Home/Home';
-import React from "react";
-import 'animate.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home/Home";
+import React, { useEffect } from "react";
+import "animate.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import gif from "./dist/img/tenor.gif";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <span class="header-strip top-strip"></span>
@@ -22,6 +19,6 @@ function App() {
       </Switch>
     </Router>
   );
-}
+};
 
 export default App;

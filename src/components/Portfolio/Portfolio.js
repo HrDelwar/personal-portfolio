@@ -120,15 +120,15 @@ const Portfolio = () => {
                                             <FontAwesomeIcon style={{ fontSize: 16 }} icon={faEye} />
                                             <span class="custom-tooltip-item custom-width">Details</span>
                                         </a>
-                                        <a href={project.liveSite} class="custom-tooltip mr-1" target="_blank" rel="noreferrer">
+                                        <a href={project.liveSite} class="custom-tooltip mr-1" target="_blank" rel="noopener noreferrer">
                                             <FontAwesomeIcon style={{ fontSize: 16 }} icon={faLink} />
                                             <span class="custom-tooltip-item custom-width">live page</span>
                                         </a>
-                                        <a href={project.codeLinkClient} target="_blank" rel="noreferrer" class="custom-tooltip mr-1">
+                                        <a href={project.codeLinkClient} target="_blank" rel="noopener noreferrer" class="custom-tooltip mr-1">
                                             <FontAwesomeIcon icon={faCode} style={{ fontSize: 16 }} />
                                             <span class="custom-tooltip-item custom-width">client code</span>
                                         </a>
-                                        {project.codeLinkServer && <a href={project.codeLinkServer} target="_blank" rel="noreferrer" class="custom-tooltip mr-1">
+                                        {project.codeLinkServer && <a href={project.codeLinkServer} target="_blank" rel="noopener noreferrer" class="custom-tooltip mr-1">
                                             <FontAwesomeIcon style={{ fontSize: 16 }} icon={faCode} />
                                             <span class="custom-tooltip-item custom-width">server code</span>
                                         </a>}
