@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import lines from '../../dist/img/lines.png';
 import { useForm } from "react-hook-form";
 import emailjs from 'emailjs-com';
@@ -25,6 +25,10 @@ const Contact = () => {
             setSuccess(false)
         }, 5000);
     }
+
+    useEffect(() =>{
+        console.log(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID,  process.env.REACT_APP_YOUR_USER_ID)
+    },[])
 
     return (
         <section id="contact" class="site-section section-form text-center">

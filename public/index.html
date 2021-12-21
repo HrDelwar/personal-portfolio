@@ -69,19 +69,6 @@
     <!-- Custom styles for this template -->
     <link href="dist/css/style.css" rel="stylesheet" />
     <link href="dist/css/responsive.css" rel="stylesheet" />
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body id="root">
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
     <script>
       window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function () {};
 
@@ -90,12 +77,12 @@
         target.setAttribute("style", "position:relative;");
         const parent = document.createElement("div");
         parent.setAttribute(
-          "style",
-          "position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:black;border-radius:5px;color:white; z-index:9999;box-shadow: 1px 2px 8px 2px rgba(255,255,255,.5)"
+                "style",
+                "position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:black;border-radius:5px;color:white; z-index:9999;box-shadow: 1px 2px 8px 2px rgba(255,255,255,.5)"
         );
         parent.innerHTML = `
-        
-    <h5 style="text-align:center">JUST COOL DUDE, FOCUS YOUR JOB</h5>
+
+    <h5 style="text-align:center">JUST COOL DUDE..! CHILL... :)</h5>
     <image  src="https://miro.medium.com/max/1400/0*C-cPP9D2MIyeexAT.gif" alt="just-fun" />
     `;
         target.appendChild(parent);
@@ -144,15 +131,28 @@
       };
 
       document.addEventListener(
-        "contextmenu",
-        (ev) => {
-          ev.preventDefault();
-          message();
-          return false;
-        },
-        false
+              "contextmenu",
+              (ev) => {
+                ev.preventDefault();
+                message();
+                return false;
+              },
+              false
       );
     </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="root">
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
